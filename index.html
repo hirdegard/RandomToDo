@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random ToDo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>ランダムToDoリスト</h1>
+
+      <section class="card">
+        <h2>タスク追加</h2>
+        <form id="todo-form" class="row">
+          <input id="todo-input" type="text" placeholder="例: 買い物に行く" required />
+          <button type="submit">追加</button>
+        </form>
+      </section>
+
+      <section class="card">
+        <h2>ToDo一覧</h2>
+        <ul id="todo-list" aria-live="polite"></ul>
+      </section>
+
+      <section class="card">
+        <h2>ランダム抽選</h2>
+        <div class="row">
+          <label for="pick-count">取り出す個数</label>
+          <input id="pick-count" type="number" min="1" value="1" />
+          <button id="pick-button" type="button">ランダムに選ぶ</button>
+        </div>
+        <p id="message" class="message"></p>
+        <ol id="picked-list"></ol>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

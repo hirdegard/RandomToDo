@@ -1,0 +1,92 @@
+:root {
+  color-scheme: light;
+  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f4f6fb;
+  color: #1c2333;
+}
+
+.app {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  margin-bottom: 16px;
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+input[type="text"],
+input[type="number"] {
+  flex: 1;
+  min-width: 120px;
+  border: 1px solid #c9d2e3;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 14px;
+  background: #2d63ff;
+  color: white;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+button:hover {
+  background: #1d4fe0;
+}
+
+.delete-btn {
+  background: #e64b4b;
+  padding: 4px 10px;
+  font-size: 0.85rem;
+}
+
+.delete-btn:hover {
+  background: #cd3333;
+}
+
+#todo-list,
+#picked-list {
+  padding-left: 20px;
+}
+
+#todo-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin: 8px 0;
+}
+
+.message {
+  min-height: 1.4em;
+  color: #5a6377;
+}
